@@ -2,8 +2,7 @@
 var a = 8; // primeiro numero
 var b = 6; //segundo numero
 var divisor = 2;     
-var mdc = 1;
-
+var mdc = 1
 
     while (divisor <= a && divisor <= b) {
       
