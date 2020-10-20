@@ -1,16 +1,15 @@
+//Número é primo: Um número inteiro positivo n é primo se for divisível apenas por 1 e por 
+
 //Número é primo: Um número inteiro positivo n é primo se for divisível apenas por 1 e por n.
-var readline = require('readline');
-var n;
-var a;
+var num = 0;
 
-var leitor = readline.createInterface({
-    input: process.stdin,
-    output: process.stdout
-});
-
-leitor.question("Informe um numero", function(answer) {
-    n = answer;
-    a = n + 10;
-    console.log("O numero final é " +a);
-    leitor.close();
-});
+function primo(num) {
+    for (var divisor = 2; divisor < num ; divisor++) {
+            if (num % divisor === 0) {
+                return false;
+            }
+    }
+    return num > 1;
+}
+ 
+console.log(" O numero " +num+ " é primo ? " + primo(num));
